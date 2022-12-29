@@ -1,12 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Something</title>
-</head>
-<body>
+<html>
+  <head>
+    <title>form</title>
+  </head>
+  <body style="padding-bottom: 1000px">
   
-</body>
+    <!-- action determines where information is sent -->
+    <!-- method is assigned a HTTP verb that is included in the HTTP request (don't need to be capitalised, it's convention)-->
+    <form action="">
+      <h1>Creating a form</h1>
+      <p>This is some text about the form. Very exciting.</p>
+      <label for="mimi">Name of the best cat</label>
+      <br>
+      <input type="text" name="yo" value="Mimi" id="mimi">
+      <br>
+      <label for="pass">Password please, I promise not to tell anyone</label>
+      <br>
+      <input type="password" name="pass" id="pass">
+      <br>
+      <label for="nr">Hey sexy, how long do you want to serve me?</label>
+      <br>
+      <input type="number" name="nr" id="nr">
+      <label for="nr"> years</label>
+
+      <section>
+        <br>
+        <span>How would you like to proceed?</span>
+        <br>
+
+        <label for="check-one">Sniggle</label>
+        <input type="checkbox" name="check" id="check-one" value="Sniggle">
+
+        <br>
+        <label for="check-two">Snuggle</label>
+        <input type="checkbox" name="check" id="check-two"  value="Snuggle">
+
+        <br>
+        <label for="check-three">Meow</label>
+        <input type="checkbox" name="check" id="check-three"  value="Meow">
+
+      </section>
+
+      <section>
+        <br>
+        <Span>What is the right answer?</Span>
+        <br>
+
+        <input type="radio" name="answer" id="first"  value="yes">
+        <label for="first">Yes</label>
+        <br>
+
+        <input type="radio" name="answer" id="first"  value="meow">
+        <label for="first">Meow</label>
+        <br>
+
+        <input type="radio" name="answer" id="first"  value="welcome">
+        <label for="first">Welcome</label>
+        <br>
+        <br>
+
+        <label for="select">Welcome</label>
+        <br>
+        <select id="select" name="animal">
+          <option value="cat">cat</option>
+          <option value="another">another cat</option>
+          <option value="yet-another">yet another cat</option>
+          <option value="cat?">cat?</option>
+          <option value="yes-cat">yes, cat!</option>
+          <option value="okay-fine-cat">okay fine, cat</option>
+        </select>
+      </section>  
+        
+      <section>
+        <br>
+        <br>
+
+        <label for="data">Welcome</label>
+        <br>
+        <!-- note that the id in <datalist> corresponds to list="" in input,
+        and id in input corresponds to for="" in label -->
+        <input type="text" list="datalist" id="data" name="datalist">
+        <br>
+        <datalist id="datalist">
+          <option value="cat"></option>
+          <option value="another cat"></option>
+          <option value="yet another cat"></option>
+          <option value="cat?"></option>
+          <option value="yes cat"></option>
+          <option value="okay fine cat"></option>
+          <option value="definitely cat"></option>
+        </datalist>  
+      </section>
+
+      <br><br>
+
+      <label for="textarea">write me a poem</label>
+      <br>
+      <textarea name="textarea" id="textarea" rows="5" cols="30">
+        yeah right here
+        a haiku would be nice
+      </textarea>
+             
+      <br><br>
+
+      <input type="submit" value="whoop">
+
+      <input type="email">
+      
+      
+    </form>
+
+  </body>
 </html>
